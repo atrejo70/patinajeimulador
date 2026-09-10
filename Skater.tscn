@@ -1,0 +1,3 @@
+Skater (RigidBody2D) [Script: Skater.gd]
+├── Sprite2D (Sprite2D / ColorRect)  --> Representación visual
+└── CollisionShape2D (CollisionShape2D)  --> Forma de colisión (CapsuleShape2D)
