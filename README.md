@@ -84,7 +84,7 @@ Main (Node2D) [Script: SimulationManager.gd]
     ├── BtnReset (Button)
     └── GraphView (Instancia: GraphView.tscn)
 
-2. Escena del Patinador (res://Scenes/Skater.tscn)
+### 2. Escena del Patinador (res://Scenes/Skater.tscn)
 Plaintext
 
 Skater (RigidBody2D) [Script: Skater.gd]
@@ -97,7 +97,7 @@ Skater (RigidBody2D) [Script: Skater.gd]
 
         Lock Rotation = On (Evita rotaciones no deseadas durante el deslizamiento).
 
-3. Escena del Panel de Gráficas (res://Scenes/GraphView.tscn)
+### 3. Escena del Panel de Gráficas (res://Scenes/GraphView.tscn)
 Plaintext
 
 GraphView (Control) [Script: GraphView.gd]
@@ -105,7 +105,7 @@ GraphView (Control) [Script: GraphView.gd]
     Nota de Renderizado:
     El nodo GraphView utiliza el método virtual _draw() del nodo Control para procesar y redibujar en tiempo real las curvas mediante llamadas a draw_line().
 
-📁 Estructura de Archivos
+## 📁 Estructura de Archivos
 Plaintext
 
 skater-physics-godot/
@@ -121,7 +121,7 @@ skater-physics-godot/
     ├── GraphView.gd
     └── SimulationManager.gd
 
-⚙️ Instalación y Configuración
+## ⚙️ Instalación y Configuración
 
     Clona este repositorio en tu equipo:
     Bash
@@ -134,6 +134,6 @@ skater-physics-godot/
 
     Presiona F5 (o el botón Play en la esquina superior derecha) para ejecutar la simulación.
 
-📄 Licencia
+## 📄 Licencia
 
 Este proyecto está distribuido bajo la Licencia MIT. Consulta el archivo LICENSE para obtener más información.
