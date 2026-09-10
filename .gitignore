@@ -1,0 +1,17 @@
+# Archivos de importación y caché de Godot 4
+.godot/
+*.translation
+
+# Archivos de exportación
+*.apk
+*.aab
+*.exe
+*.zip
+*.html
+*.pck
+
+# Archivos de sistema y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
