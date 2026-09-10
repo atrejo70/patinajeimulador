@@ -84,29 +84,29 @@ Main (Node2D) [Script: SimulationManager.gd]
     ├── BtnReset (Button)
     └── GraphView (Instancia: GraphView.tscn)
 
+```
+
 ### 2. Escena del Patinador (res://Scenes/Skater.tscn)
-Plaintext
+```text
 
 Skater (RigidBody2D) [Script: Skater.gd]
 ├── Sprite2D (Sprite2D / ColorRect)  --> Representación visual
 └── CollisionShape2D (CollisionShape2D)  --> Forma de colisión (CapsuleShape2D)
+```
 
-    Nota de Configuración del RigidBody2D:
-
-        Gravity Scale = 0 (La fuerza de gravedad en la pendiente se calcula vectorialmente por código).
-
-        Lock Rotation = On (Evita rotaciones no deseadas durante el deslizamiento).
+###    Nota de Configuración del RigidBody2D:
+* Gravity Scale = 0 (La fuerza de gravedad en la pendiente se calcula vectorialmente por código).
+* Lock Rotation = On (Evita rotaciones no deseadas durante el deslizamiento).
 
 ### 3. Escena del Panel de Gráficas (res://Scenes/GraphView.tscn)
-Plaintext
-
+```text
 GraphView (Control) [Script: GraphView.gd]
+```
+###    Nota de Renderizado:
+El nodo GraphView utiliza el método virtual _draw() del nodo Control para procesar y redibujar en tiempo real las curvas mediante llamadas a draw_line().
 
-    Nota de Renderizado:
-    El nodo GraphView utiliza el método virtual _draw() del nodo Control para procesar y redibujar en tiempo real las curvas mediante llamadas a draw_line().
-
-## 📁 Estructura de Archivos
-Plaintext
+### 📁 Estructura de Archivos
+```text
 
 skater-physics-godot/
 ├── .gitignore
@@ -120,20 +120,20 @@ skater-physics-godot/
     ├── Skater.gd
     ├── GraphView.gd
     └── SimulationManager.gd
+```
+### ⚙️ Instalación y Configuración
 
-## ⚙️ Instalación y Configuración
-
-    Clona este repositorio en tu equipo:
+*    Clona este repositorio en tu equipo:
     Bash
 
-    git clone [https://github.com/TU_USUARIO/skater-physics-godot.git](https://github.com/TU_USUARIO/skater-physics-godot.git)
+*    git clone https://github.com/TU_USUARIO/skater-physics-godot.git
 
-    Abre Godot Engine 4.x.
+*    Abre Godot Engine 4.x.
 
-    Haz clic en Importar y selecciona el archivo project.godot dentro de la carpeta clonada.
+*    Haz clic en Importar y selecciona el archivo project.godot dentro de la carpeta clonada.
 
-    Presiona F5 (o el botón Play en la esquina superior derecha) para ejecutar la simulación.
+*   Presiona F5 (o el botón Play en la esquina superior derecha) para iniciar la simulación.
 
-## 📄 Licencia
+### 📄 Licencia
 
 Este proyecto está distribuido bajo la Licencia MIT. Consulta el archivo LICENSE para obtener más información.
