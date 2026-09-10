@@ -1,0 +1,18 @@
+config_version=5
+
+[application]
+
+config/name="Skater Physics Simulator 2D"
+config/description="Simulador educativo en Godot 4 para analizar el deslizamiento de un patinador en pendiente considerando peso, inclinación, tamaño de ruedas y aerodinámica."
+run/main_scene="res://Scenes/Main.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=1
